@@ -1,0 +1,90 @@
+{
+  "productDetails": [
+    {
+      "label": "Product Name",
+      "name": "productName",
+      "fieldType": "text",
+      "required": true,
+      "column": 2,
+      "icon": "FaTag"
+    },
+    {
+      "label": "Price",
+      "name": "price",
+      "fieldType": "number",
+      "required": true,
+      "column": 2,
+      "icon": "FaDollarSign"
+    },
+    
+    {
+      "label": "Brand",
+      "name": "brand",
+      "fieldType": "text",
+      "required": true,
+      "column": "brand",
+      "icon": "FaTag"
+    },
+    {
+      "label": "Description",
+      "name": "description",
+      "fieldType": "textarea",
+      "required": false,
+      "column": 2,
+      "icon": "FaInfoCircle"
+    },
+    {
+      "label": "Category",
+      "name": "category",
+      "fieldType": "select",
+      "options": ["Electronics", "Clothing", "Books", "Home & Kitchen", "Beauty & Personal Care", "Health & Household", "Toys & Games", "Sports & Outdoors", "Automotive", "Industrial & Scientific"],
+      "required": true,
+      "column": 2,
+      "icon": "FaList"
+    },
+    {
+      "label": "Stock Quantity",
+      "name": "stockQuantity",
+      "fieldType": "number",
+      "required": true,
+      "column": "stock_quantity",
+      "icon": "FaWarehouse"
+    },
+    {
+      "label": "Rating",
+      "name": "rating",
+      "fieldType": "number",
+      "required": true,
+      "column": "rating",
+      "icon": "FcRating"
+    },
+    {
+      "label": "Manufacturer",
+      "name": "manufacturer",
+      "fieldType": "text",
+      "required": true,
+      "column": "manufacturer",
+      "icon": "FaIndustry"
+    },
+    {
+      "label": "Return Policy",
+      "name": "return",
+      "fieldType": "select",
+      "options": ["No Return", "7 Days Return"],
+      "required": true,
+      "column": "2",
+      "icon": "GiReturnArrow"
+    },
+    {
+      "label": "Warranty Policy",
+      "name": "warranty",
+      "fieldType": "select",
+      "options": ["No Warranty", "3 Months Warranty", "6 Months Warranty", "1 year Warranty", "3 year Warranty", "5 year Warranty"],
+      "required": true,
+      "column": 2,
+      "icon": "FaShieldAlt"
+    }
+    
+
+  ]
+}
