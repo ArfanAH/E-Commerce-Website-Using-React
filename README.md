@@ -1,9 +1,26 @@
-# React + Vite
+# E-commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An e-commerce website built with modern web technologies, enabling user login via Clerk, database handling with Neon, and front-end development in the React framework.
 
-Currently, two official plugins are available:
+### 🌐 [Live Website](https://e-commerce-website-arfan.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# E-Commerce-Website-Using-React
+---
+
+## 🚀 Features
+- **User Authentication**: Secure login and user management powered by Clerk.
+- **Database Integration**: Reliable data storage with Neon.
+- **Responsive UI**: Built with React for a smooth, user-friendly interface.
+- **Product Listing**: Display products with dynamic data from the database.
+
+---
+
+## 🛠️ Technologies Used  
+- **Frontend**: [React](https://reactjs.org/)
+- **Authentication**: [Clerk](https://clerk.dev/)
+- **Database**: [Neon](https://neon.tech/)
+
+---
+
+## 📜 License
+All Rights Reserved by Md. Arfan Ahmed.
+
