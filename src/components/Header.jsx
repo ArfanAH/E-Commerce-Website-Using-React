@@ -2,10 +2,20 @@ import { SignInButton, UserButton, useUser } from '@clerk/clerk-react';
 import { FaShoppingCart } from "react-icons/fa";
 import React from 'react';
 import { Button } from './ui/button';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify'; 
+import 'react-toastify/dist/ReactToastify.css'; 
 
 function Header() {
   const { user, isSignedIn } = useUser();
+  const navigate = useNavigate();
+  const handleCartClick = () => {
+    if (isSignedIn) {
+      navigate('/cart');
+    } else {
+      toast.success('Please Login to add product to your cart'); 
+    }
+  };
   return (
     <div className='flex justify-between items-center shadow-sm p-5'>
       <Link to={'/'}>
@@ -25,25 +35,21 @@ function Header() {
       
 
       <div className='flex items-center gap-5'>
+        <button onClick={handleCartClick} className='relative'>
+          <FaShoppingCart className='text-3xl' />
+        </button>
 
-      <Link to={'/cart'} className='relative'>
-        <FaShoppingCart className='text-3xl' />
-      </Link>
-
-      {isSignedIn ? (
-        <div >
+        {isSignedIn ? (
           <UserButton />
-        </div>
-      ) : (
-        <SignInButton mode='modal' forceRedirectUrl='/'>
-          <Button className="bg-yellow-300 border rounded-xl shadow-md hover:bg-yellow-600">Log in</Button>
-        </SignInButton>
-      )}
-
-
+        ) : (
+          <SignInButton mode='modal' forceRedirectUrl='/'>
+            <Button className="bg-yellow-300 border rounded-xl shadow-md hover:bg-yellow-600">
+              Log in
+            </Button>
+          </SignInButton>
+        )}
+        <ToastContainer /> 
       </div>
-
-      
     </div>
   );
 }

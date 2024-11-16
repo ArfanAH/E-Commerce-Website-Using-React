@@ -70,8 +70,8 @@ function ItemDetails()
 
           </div>
         </div>
-        <MostSearchItems/>
       </div>
+      <MostSearchItems/>
       <Footer/>
     </div>
   )

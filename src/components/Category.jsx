@@ -4,9 +4,9 @@ import { CategoryList } from '../Shared/Data';
 
 function Category() {
   return (
-    <div className='mt-60'>
-      <h2 className='font-bold text-3xl text-center mb-6'>Top Categories</h2>
-      <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9 gap-3 px-20 pb-10'>
+    <div className='mt-10'>
+      <h2 className='font-bold text-3xl text-center mb-6 sm:text-3xl'>Top Categories</h2>
+      <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-9 gap-3 px-20 pb-10'>
         {CategoryList.map((category) => (
           <Link 
             key={category.name} // Add a unique key prop

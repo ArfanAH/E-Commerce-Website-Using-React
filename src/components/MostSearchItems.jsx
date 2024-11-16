@@ -35,9 +35,8 @@ function MostSearchItems()
     setItems(resp);
   }
   return (
-    <div className="mx-24 my-10 px-5">
+    <div className="mx-10 my-10 px-5 md:mx-12 lg:mx-24">
       <h2 className="font-bold text-3xl text-center mb-6">Todays Deals</h2>
-
       <Carousel >
         <CarouselContent >
           {items.map((item, index) => (
@@ -47,12 +46,12 @@ function MostSearchItems()
           >
             <Items item={item} />
           </CarouselItem>
-          
           ))}
         </CarouselContent>
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
+
     </div>
   );
 }

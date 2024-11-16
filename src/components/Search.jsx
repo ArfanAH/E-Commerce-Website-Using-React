@@ -17,12 +17,12 @@ function Search() {
   };
 
   return (
-    <div className='relative p-2 md:p-5 bg-white rounded-md md:rounded-full flex items-center gap-2 md:gap-5 px-5 w-[50%]'>
+    <div className='relative p-2 sm:p-4 md:px-5 bg-white rounded-md md:rounded-full  flex items-center gap-2 sm:gap-4 md:gap-5 px-5 w-[90%] sm:w-[80%] sm:rounded-full md:w-[50%]'>
       {/* Search Input */}
       <input
         type='text'
         placeholder='Search Here...'
-        className='flex-1 outline-none bg-transparent text-gray-700'
+        className='flex-1 outline-none bg-transparent text-gray-700 p-2 sm:p-3'
         value={searchTerm}
         onChange={e => setSearchTerm(e.target.value)}
       />
