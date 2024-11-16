@@ -104,9 +104,9 @@ function AddProduct() {
   return (
     <div>
       <div>
-        <div className='px-10 md:px-20 my-10'>
-          <h2 className='font-bold text-4xl px-8'>Add New Product</h2>
-          <form className='p-10 border rounded-xl mt-10'>
+        <div className='w-full px-4 md:px-20 my-10'>
+          <h2 className='font-bold text-3xl px-2 md:text-4xl'>Add New Product</h2>
+          <form className='w-full p-4 border rounded-xl mt-5 md:mt-10'>
             {/* Product Name */}
             <div>
               <h2 className='font-medium text-xl mb-6'>Product details</h2>

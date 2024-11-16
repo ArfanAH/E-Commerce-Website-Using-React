@@ -21,7 +21,12 @@ function Header() {
       <Link to={'/'}>
         <img src='ecommerce.svg' alt='ecommerce' width={60} height={50} />
       </Link>
-      <ul className='hidden md:flex gap-16'>
+
+      <h2 className='font-bold text-lg sm:text-xl     md:text-2xl lg:text-3xl text-center md:text-left md:pl-20 hidden md:block'>
+       E-Commerce Website By Arfan
+      </h2>
+
+      {/* <ul className='hidden md:flex gap-16'>
         <Link to={'/'}>
           <li className='font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary'>Home</li>
         </Link>
@@ -31,7 +36,7 @@ function Header() {
         <Link to={'/aboutus'}>
           <li className='font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary'>About Us</li>
         </Link>
-      </ul>
+      </ul> */}
       
 
       <div className='flex items-center gap-5'>

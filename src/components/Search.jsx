@@ -17,7 +17,7 @@ function Search() {
   };
 
   return (
-    <div className='relative p-2 sm:p-4 md:px-5 bg-white rounded-md md:rounded-full  flex items-center gap-2 sm:gap-4 md:gap-5 pl-2 w-[90%] sm:w-[80%] sm:rounded-full md:w-[50%]'>
+    <div className='relative p-2 sm:p-4 md:px-5 bg-white rounded-full md:rounded-full  flex items-center gap-2 sm:gap-4 md:gap-5 pl-2 w-[100%] md:w-[50%]'>
       {/* Search Input */}
       <input
         type='text'
